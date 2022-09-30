@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/**
+ * main - prints all arguments it receives
+ * @argc: argument count
+ * @argv: argument ventor of strings passed on the CLI
+ *
+ * Return: On success 0
+ */
+
+int main(int argc, char *argv[])
+{
+	while (argc--)
+	{
+		printf("%s\n", *argv++);
+	}
+
+	return (0);
+}
